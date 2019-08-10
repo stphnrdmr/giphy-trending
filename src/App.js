@@ -1,6 +1,7 @@
 /* global fetch:false */
 
 import React from 'react'
+import giphyLogo from './PoweredBy_200px-Black_HorizText.png'
 import './App.css'
 
 class App extends React.Component {
@@ -68,6 +69,7 @@ class App extends React.Component {
           {giphies}
         </div>
         <button disabled={this.state.isFetching} className='load-more' onClick={this.handleClick}>Load more</button>
+        <img alt='powered by giphy' src={giphyLogo} />
       </div>
     )
   }
